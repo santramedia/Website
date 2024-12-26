@@ -145,7 +145,7 @@ header {
 }
 
 .talent:hover {
-    transform: scale(1.1);
+    transform: scale(0.9);
 }
 
 .talent img {
@@ -436,7 +436,7 @@ p {
     .navbar {
         flex-direction: row;
         align-items: center;
-        gap: 0px
+        gap: 5px
     }
 
     .hero {
@@ -445,10 +445,6 @@ p {
 
     .hero-content h1 {
         font-size: 40px;
-    }
-
-    .talent-section {
-        grid-template-columns: 1fr;
     }
 
     .footer-content h1 {
@@ -465,6 +461,6 @@ p {
     .navbar {
         flex-direction: row;
         align-items: center;
-        gap: 0px
+        gap: 1px
     }
 }
