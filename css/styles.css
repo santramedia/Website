@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "OCR A Std", monospace;
+    background: linear-gradient(135deg, #1e1e30, #1c273e, #272b55);
+    overflow-x: hidden; /* Mencegah scroll horizontal */
+    background-size: 100%;
+
+    /* Background gradasi */
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.navbar {
+    background: #1c1e2d;
+    /* Warna latar belakang navigasi */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    padding-right: 1000px;
+}
+
+.logo h1{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+     margin-right: auto;
+}
+
+.santra-logo {
+    width: 150px;
+    /* Sesuaikan dengan ukuran yang diinginkan */
+    height: auto;
+    margin-left: 0px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #d3d3d3;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    color: #ffffff;
+}
+
+.talent-btn {
+    padding: 8px 16px;
+    background: #ff69b4;
+    /* Gradasi tombol */
+    color: black;
+    border-radius: 20px;
+    font-weight: bold;
+    /* Bayangan untuk tombol */
+}
+
+/*.All-btn {
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(255, 20, 147, 0.3);
+    width: 100px; 
+    text-align: center;
+    position: relative;
+
+}*/
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px;
+    color: white;
+    flex-wrap: nowrap;
+}
+
+.hero-content h1 {
+    font-family: "LemonMilk", sans-serif;
+    line-height: 1.2;
+    color: #BFECFF;
+    margin-bottom: 1em;
+    font-size: 80px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.hero-image img {
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.talent-section {
+    display: grid;
+    gap: 20px;/* Jarak antar gambar */
+    justify-items: center;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.talent {
+    width: 250px;
+    /*background-color: #444;*/
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: grid;
+    text-decoration: none;
+    
+}
+
+.talent h3 {
+    color: #d3d3d3;
+    margin-top: 20px;
+}
+
+.talent:hover {
+    transform: scale(1.1);
+}
+
+.talent img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container {
+    padding: 50px;
+}
+
+.container h1{
+    /*padding: 50px;*/
+    font-family: "LemonMilk", sans-serif;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.container p{
+    /*padding: 50px;*/
+    font-size: 0.9em;
+    color: white;
+    text-align: center;
+}
+
+/*h1 {
+    font-size: 2em;
+    color: #ff7a94;
+    text-align: center;
+}*/
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;   /* Mencegah perubahan layout */
+    overflow-x: auto;  /* Scroll horizontal jika tidak cukup ruang */
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    width: 250px;
+    justify-content: space-between;
+    
+}
+
+.button-All {
+    display: grid;
+    place-items: center; /* Sentralisasi horizontal dan vertikal */
+}
+
+.centered-button-All {
+    padding: 10px 20px;
+    font-family: "LemonMilk", sans-serif;
+    font-size: 16px;
+    background: #ff577f;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button span {
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    padding: 5px 15px;
+    font-size: 1em;
+}
+
+.youtube {
+    background-color: #ff0000;
+}
+
+.youtube span {
+    background-color: white;
+    color: red;
+}
+
+.instagram {
+    background-color: #ff6b81;
+}
+
+.discord {
+    background-color: #7289da;
+}
+
+.discord span {
+    background-color: white;
+    color: #7289da;
+}
+
+.explane {
+    /*background: linear-gradient(135deg, #ff7f50, #ff4500);*/
+    color: #ffffff;
+    padding: 50px 20px;
+    border-radius: 15px;
+    /*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);*/
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+.explane-content h1 {
+    font-family: "CenturyGothic", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.explane-content p {
+    font-family: "CenturyGothic", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #f9f9f9;
+}
+
+.footer {
+    background: linear-gradient(135deg, #1e1e30, #1c273e, #272b55);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.footer-content {
+    /*background-color: #2a2a3b;*/
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
+    color: white;
+}
+
+.footer-content h1 {
+    font-family: "LemonMilk", sans-serif;
+    color: white;
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+.footer-content p {
+    font-size: 14px;
+    margin: 5px 0 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff8c00;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 10px;
+    color: white;
+}
+
+.settings-icon {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.settings-icon:hover {
+    color: #ff8c00;
+}
+
+/* Tambahkan ini di bagian akhir file CSS */
+
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+    }
+
+    .hero-image img {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 400px;
+    }
+
+    .logo {
+        padding-right: 0;
+        justify-content: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 250px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        /* Sesuaikan jarak menu untuk layar lebih kecil */
+    }
+
+    .talent-btn {
+        font-size: 0.9rem;
+        /* Perkecil ukuran font tombol */
+        padding: 6px 12px;
+        /* Sesuaikan padding */
+    }
+
+    .social-buttons {
+        display: grid;
+    }
+    
+}
+
+@media (max-width: 576px) {
+
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        gap: 100px
+    }
+
+    .hero {
+        padding: 110px 1px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .footer-content h1 {
+        font-size: 20px;
+    }
+
+    .footer-content p {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        gap: 0px
+    }
+
+    .hero {
+        padding: 110px 1px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .talent-section {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content h1 {
+        font-size: 20px;
+    }
+
+    .footer-content p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 287px) {
+
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        gap: 0px
+    }
+}
