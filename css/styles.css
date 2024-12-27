@@ -439,6 +439,27 @@ p {
         gap: 5px
     }
 
+    .nav-links {
+        display: none;
+        /* Sembunyikan menu */
+    }
+    
+     .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        background-color: #1a1a2e;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
     .hero {
         padding: 110px 1px;
     }
