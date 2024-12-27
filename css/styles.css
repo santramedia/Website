@@ -444,7 +444,7 @@ p {
         /* Sembunyikan menu */
     }
     
-     .hamburger {
+    .hamburger {
         display: block;
         cursor: pointer;
     }
